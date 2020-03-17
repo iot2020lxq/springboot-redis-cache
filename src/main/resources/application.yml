@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring_cache?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai 
+#  redis:
+#    host: 192.168.81.129  #redis主机地址
+#    port: 6379            #端口
+#    database: 0           #0号库
+#    timeout: 180000       #连接超时间
+#    jedis:
+#      pool:
+#        max-active: 8 
+#        max-wait: -1      #连接池最大堵塞等待时间，-1代表没有限制
+#        max-idle: 8       #连接池最大空闲连接
+#        min-idle: 0       #连接池最小空闲连接
+        
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true  #开启驼峰命名法  
+
+
+logging:
+  level:
+    cn.iot.cache.mapper: debug    #设置日志级别
+    
+
+#spring.redis.host=192.168.81.129
+
+#mybatis.configuration.map-underscore-to-camel-case=true
+
+#mybatis.config-location=classpath:/
+
+#logging.level.cn.iot.cache.mapper=debug
+
